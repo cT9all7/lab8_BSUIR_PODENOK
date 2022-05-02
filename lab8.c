@@ -55,7 +55,7 @@ int main(int argc, char* argv[])
 {
 	bool flag;
 	key_t key;
-	key=ftok("/home/kali/progi/lab02/ftok",2);
+	key=ftok(char* path,int number);//path == path to any file, number any number 
 	
 	msqid=msgget(key,(IPC_CREAT|0666));
 	semid=semget(key,2,(IPC_CREAT|0666));
